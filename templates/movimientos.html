@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movimientos | FinanPlan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-logo"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v3"/><rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="16.5" cy="13" r="1"/></svg></span>
+      <div><small>FINANZAS</small><strong>MiBalance</strong></div>
+    </div>
+    <p class="nav-title">MENÚ PRINCIPAL</p>
+    <nav class="nav"><a class="nav-item" href="inicio.html"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span>Inicio</a><a class="nav-item active" href="movimientos.html"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h14l-3-3M20 16H6l3 3"/></svg></span>Movimientos</a><a class="nav-item" href="categorias.html"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></span>Categorías</a><a class="nav-item" href="presupuestos.html"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>Presupuestos</a></nav>
+    <div class="side-bottom">
+      <div class="user"><span class="avatar">UD</span><div><strong>Usuario Demo</strong><small>Cuenta personal</small></div></div>
+      <a class="nav-item logout" href="#"><span class="ic"><svg viewBox="0 0 24 24"><path d="M10 4H5v16h5M14 8l4 4-4 4M18 12H9"/></svg></span>Cerrar sesión</a>
+    </div>
+  </aside>
+  <main class="content">
+    <header class="topbar">
+      <div><p class="crumb">Movimientos</p><h1>Historial de movimientos</h1><p class="sub">Consulta y administra las operaciones registradas.</p></div>
+      <div class="top-actions">
+        <a class="btn-dark" href="#"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>Registrar nuevo movimiento</a>
+        <div class="user-chip"><span class="avatar">UD</span><div><strong>Usuario Demo</strong><small>Cuenta personal</small></div></div>
+      </div>
+    </header>
+    <article class="card">
+      <div class="card-head"><div><h2>Todos los movimientos</h2><p class="sub">5 operaciones registradas</p></div>
+        <select class="select" name="filtro_tipo"><option>Todos los tipos</option><option>Gasto</option><option>Ingreso</option></select></div>
+      <div class="table-wrap"><table><thead><tr><th>Descripción</th><th>Tipo</th><th>Categoría</th><th>Fecha</th><th class="right">Valor</th><th class="right">Opciones</th></tr></thead><tbody><tr><td class="strong">Compra supermercado</td><td><span class="tag gasto">Gasto</span></td><td>Alimentación</td><td class="muted">24 Jun, 2025</td><td class="right strong gasto-v">- $ 185.000</td><td class="right"><a class="mini-btn" href="#">Consultar</a> <a class="mini-btn" href="#">Editar</a> <a class="mini-btn danger" href="#">Eliminar</a></td></tr><tr><td class="strong">Pago de nómina</td><td><span class="tag ingreso">Ingreso</span></td><td>Ingresos</td><td class="muted">23 Jun, 2025</td><td class="right strong ingreso-v">+ $ 3.200.000</td><td class="right"><a class="mini-btn" href="#">Consultar</a> <a class="mini-btn" href="#">Editar</a> <a class="mini-btn danger" href="#">Eliminar</a></td></tr><tr><td class="strong">Servicio de internet</td><td><span class="tag gasto">Gasto</span></td><td>Servicios</td><td class="muted">21 Jun, 2025</td><td class="right strong gasto-v">- $ 110.000</td><td class="right"><a class="mini-btn" href="#">Consultar</a> <a class="mini-btn" href="#">Editar</a> <a class="mini-btn danger" href="#">Eliminar</a></td></tr><tr><td class="strong">Cena restaurante</td><td><span class="tag gasto">Gasto</span></td><td>Entretenimiento</td><td class="muted">19 Jun, 2025</td><td class="right strong gasto-v">- $ 96.000</td><td class="right"><a class="mini-btn" href="#">Consultar</a> <a class="mini-btn" href="#">Editar</a> <a class="mini-btn danger" href="#">Eliminar</a></td></tr><tr><td class="strong">Proyecto freelance</td><td><span class="tag ingreso">Ingreso</span></td><td>Ingresos</td><td class="muted">18 Jun, 2025</td><td class="right strong ingreso-v">+ $ 850.000</td><td class="right"><a class="mini-btn" href="#">Consultar</a> <a class="mini-btn" href="#">Editar</a> <a class="mini-btn danger" href="#">Eliminar</a></td></tr></tbody></table></div>
+    </article>
+  </main>
+</div>
+</body>
+</html>
